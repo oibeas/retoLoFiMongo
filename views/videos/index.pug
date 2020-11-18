@@ -1,0 +1,11 @@
+h1 Lista de Videos
+each video in videos
+    hr
+    .card
+        img(src=video.imagen)
+        .card.block
+        h2.card-title=(video.numeroId + ". " + video.titulo)
+        p.card-text=video.autor
+        
+        
+    
