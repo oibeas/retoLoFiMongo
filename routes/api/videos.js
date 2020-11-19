@@ -2,7 +2,7 @@ const router = require('express').Router();
 const Video = require('../../models/video');
 
 router.get('/', async (req, res) => {
-    const videos = await Video.find().limit(100);
+    const videos = await Video.find().limit(20);
     res.json(videos);
 
 });
