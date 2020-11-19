@@ -5,3 +5,6 @@ GET http://localhost:3000/api/videos/detalles/109
 
 ### Aleatorio
 GET http://localhost:3000/api/videos/aleatorio
+
+### Buscar
+GET http://localhost:3000/api/videos/buscar
