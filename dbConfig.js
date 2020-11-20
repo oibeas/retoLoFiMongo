@@ -6,4 +6,6 @@ const urlDb = 'mongodb+srv://retolofi:retoloFi2020@cluster0.npx3z.mongodb.net/re
 mongoose.connect(urlDb, {
     useNewUrlParser: true,
     useUnifiedTopology: true
-});
+})
+    .then(db => console.log("BD conectada"))
+    .catch(err => console.error(err));

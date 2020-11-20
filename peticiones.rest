@@ -7,4 +7,7 @@ GET http://localhost:3000/api/videos/detalles/109
 GET http://localhost:3000/api/videos/aleatorio
 
 ### Buscar
-GET http://localhost:3000/api/videos/buscar
+GET http://localhost:3000/api/videos/autor/mar
+
+### Buscar general
+GET http://localhost:3000/api/videos/buscar/playa

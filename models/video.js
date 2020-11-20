@@ -11,7 +11,7 @@ const videoSchema = new Schema({
     video: String,
     imagen: String,
     duracion: String,
-    numeroId: Number,
+    rango: Number,
 
 });
 

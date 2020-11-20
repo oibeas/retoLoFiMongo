@@ -8,19 +8,25 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/detalles/:idVideo', async (req, res) => {
-    const videos = await Video.find({ 'numeroId': (req.params.idVideo) })
+    const videos = await Video.find({ 'rango': (req.params.idVideo) })
     res.json(videos);
 })
 
-router.get('/buscar', async (req, res) => {
-    const videos = await Video.find({
-        $search: {
-            'text': {
-                'path': 'titulo',
-                'query': 'retolofi'
-            }
+router.get('/autor/:idAutor', async (req, res) => {
+    const videos = await Video.find({ 'autor': { $regex: req.params.idAutor, $options: 'i' } })
+    res.json(videos);
+})
+
+router.get('/buscar/:idBusqueda', async (req, res) => {
+    const videos = await Video.find(
+        {
+            $or:
+                [
+                    { titulo: { $regex: req.params.idBusqueda, $options: 'i' } },
+                    { autor: { $regex: req.params.idBusqueda, $options: 'i' } },
+                ]
         }
-    })
+    )
     res.json(videos);
 })
 
@@ -33,7 +39,7 @@ router.get('/aleatorio', async (req, res) => {
     let aleatorio = Math.floor(Math.random() * (308 - 1)) + 1;
     console.log(aleatorio);
 
-    const videos = await Video.find({ 'numeroId': (aleatorio) })
+    const videos = await Video.find({ 'rango': (aleatorio) })
     res.json(videos);
 });
 
