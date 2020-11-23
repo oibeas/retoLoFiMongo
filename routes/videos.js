@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
     let aleatorio = Math.floor(Math.random() * (308 - 1)) + 1;
     console.log(aleatorio);
 
-    Video.find({ 'numeroId': { $gt: aleatorio, $lt: aleatorio + 20 } })
+    Video.find({ 'rango': { $gt: aleatorio, $lt: aleatorio + 20 } })
         .then(videos => {
             console.log(videos);
             res.render('videos/index', { videos });
@@ -19,7 +19,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/detalles/:idVideo', (req, res) => {
-    Video.find({ 'numeroId': (req.params.idVideo) })
+    Video.find({ 'rango': (req.params.idVideo) })
         .then(videos => {
             res.render('videos/index', { videos });
         }).catch(error => console.log(error));
