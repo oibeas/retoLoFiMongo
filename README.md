@@ -8,7 +8,7 @@ _Aplicación back de una API que sirve un listado de videos musicales LO-FI de y
 * Express
 * MongoDB
 
-`Heroku` https://retolofi.herokuapp.com
+`Heroku` https://retolofi.herokuapp.com/api/videos
 
 Endpoints
 
