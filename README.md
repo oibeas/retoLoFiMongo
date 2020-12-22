@@ -58,7 +58,7 @@ _Proyecto personal realizado para aprender las capacidades de una base de datos 
 ## Contribuyendo 🖇️
 
 * Informacion de los videos sacada de youtube.com
-* #RetoLofi Playlist Oficial por [Jaime Altozano](https://www.youtube.com/watch?v=cDIYpIbTbW8&list=PL0ONFXpPDe_mtm3ciwL-v7EE-7yLHDlP8)
+* #RetoLofi Playlist Oficial por [Jaime Altozano](https://www.youtube.com/playlist?list=PL0ONFXpPDe_mtm3ciwL-v7EE-7yLHDlP8)
 
 
 ## Expresiones de Gratitud 🎁
